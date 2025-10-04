@@ -1,6 +1,9 @@
 <?php
-require_once 'includes/auth.php';
+require_once 'includes/header.php';
 
 logout();
-header('Location: login.php');
+
+// Redirect to home page after logout
+header('Location: index.php');
 exit;
+?>
