@@ -182,6 +182,9 @@ p {
     color: var(--muted);
     margin-top: -2px;
 }
+/* .logo-img{
+    height: 500px;
+} */
 
 .nav-links {
     display: flex;
