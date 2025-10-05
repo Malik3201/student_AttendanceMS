@@ -4,7 +4,7 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h3>Canberra System</h3>
+                    <h3>Canberra <br> S-A-M-S</h3>
                     <p>Professional Student Attendance & Marks Management System designed for modern educational institutions. Streamline your administrative tasks with our secure and intuitive platform.</p>
                 </div>
                 

@@ -1,6 +1,8 @@
 -- Student Attendance & Marks Management System
--- Clean Database Schema - Following Exact Requirements
-
+-- Create the database first
+CREATE DATABASE IF NOT EXISTS attendance_ms;
+-- Select it (activate it)
+USE attendance_ms;
 -- Drop existing tables if they exist (in correct order to handle foreign keys)
 DROP TABLE IF EXISTS marks;
 DROP TABLE IF EXISTS attendance;
@@ -70,21 +72,21 @@ CREATE TABLE marks (
 -- Insert sample data for testing
 
 -- Sample users (lecturers and students)
--- Password: 'password123' hashed with password_hash()
+-- Password: '123456' hashed with password_hash()
 INSERT INTO users (name, email, password, role) VALUES
-('Dr. John Smith', 'lecturer1@university.edu', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 'lecturer'),
-('Prof. Sarah Johnson', 'lecturer2@university.edu', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 'lecturer'),
-('Alice Brown', 'student1@university.edu', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 'student'),
-('Bob Wilson', 'student2@university.edu', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 'student'),
-('Carol Davis', 'student3@university.edu', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 'student'),
-('David Miller', 'student4@university.edu', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 'student');
+('Dr. John Smith', 'lecturer1@university.edu', '$2y$10$6Lrbr/qQdXT5O.VbFXImrOQcDTFdVLVjRItVju6HFL76z/dhkDG52', 'lecturer'),
+('Prof. Sarah Johnson', 'lecturer2@university.edu', '$2y$10$6Lrbr/qQdXT5O.VbFXImrOQcDTFdVLVjRItVju6HFL76z/dhkDG52', 'lecturer'),
+('Rehan', 'student1@university.edu', '$2y$10$6Lrbr/qQdXT5O.VbFXImrOQcDTFdVLVjRItVju6HFL76z/dhkDG52', 'student'),
+('Awais', 'student2@university.edu', '$2y$10$6Lrbr/qQdXT5O.VbFXImrOQcDTFdVLVjRItVju6HFL76z/dhkDG52', 'student'),
+('Ali Raza', 'student3@university.edu', '$2y$10$6Lrbr/qQdXT5O.VbFXImrOQcDTFdVLVjRItVju6HFL76z/dhkDG52', 'student'),
+('Kiril', 'student4@university.edu', '$2y$10$6Lrbr/qQdXT5O.VbFXImrOQcDTFdVLVjRItVju6HFL76z/dhkDG52', 'student');
 
 -- Sample courses
 INSERT INTO courses (course_name, course_code, semester, lecturer_id) VALUES
-('Introduction to Computer Science', 'CS101', 'Fall 2024', 1),
-('Data Structures and Algorithms', 'CS201', 'Fall 2024', 1),
-('Calculus I', 'MATH101', 'Fall 2024', 2),
-('Linear Algebra', 'MATH201', 'Spring 2024', 2);
+('Introduction to Computer Science', 'CS101', 'Fall 2025', 1),
+('Data Structures and Algorithms', 'CS201', 'Fall 2025', 1),
+('Calculus I', 'MATH101', 'Fall 2025', 2),
+('Linear Algebra', 'MATH201', 'Spring 2025', 2);
 
 -- Sample enrollments
 INSERT INTO enrollments (student_id, course_id) VALUES
@@ -96,17 +98,17 @@ INSERT INTO enrollments (student_id, course_id) VALUES
 -- Sample attendance records
 INSERT INTO attendance (student_id, course_id, date, status) VALUES
 -- CS101 attendance
-(3, 1, '2024-10-01', 'Present'),
-(4, 1, '2024-10-01', 'Present'),
-(6, 1, '2024-10-01', 'Absent'),
-(3, 1, '2024-10-03', 'Present'),
-(4, 1, '2024-10-03', 'Present'),
-(6, 1, '2024-10-03', 'Present'),
+(3, 1, '2025-08-01', 'Present'),
+(4, 1, '2025-08-01', 'Present'),
+(6, 1, '2025-08-01', 'Absent'),
+(3, 1, '2025-08-03', 'Present'),
+(4, 1, '2025-08-03', 'Present'),
+(6, 1, '2025-08-03', 'Present'),
 -- CS201 attendance
-(4, 2, '2024-10-02', 'Present'),
-(5, 2, '2024-10-02', 'Present'),
-(4, 2, '2024-10-04', 'Present'),
-(5, 2, '2024-10-04', 'Absent');
+(4, 2, '2025-08-02', 'Present'),
+(5, 2, '2025-08-02', 'Present'),
+(4, 2, '2025-08-04', 'Present'),
+(5, 2, '2025-08-04', 'Absent');
 
 -- Sample marks
 INSERT INTO marks (student_id, course_id, exam_type, score) VALUES

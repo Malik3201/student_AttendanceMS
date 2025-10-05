@@ -334,4 +334,4 @@ This project is for educational purposes. Please ensure you have proper permissi
 
 **Developed for Educational Purposes**  
 *Canberra Student Attendance and Marks Management System*  
-*Version 1.0 - 2024*
+*Version 1.0 - 2025*

@@ -174,7 +174,7 @@ $total_marks = array_sum(array_column($courses, 'marks_entered'));
                 <div class="form-group">
                     <label for="semester">Semester</label>
                     <input type="text" id="semester" name="semester" required 
-                           placeholder="e.g., Fall 2024"
+                           placeholder="e.g., Fall 2025"
                            value="<?php echo htmlspecialchars($_POST['semester'] ?? ''); ?>">
                     <small>Academic term for this course</small>
                 </div>
