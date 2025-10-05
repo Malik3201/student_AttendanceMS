@@ -8,7 +8,7 @@
  * 
  * @author Student Developer
  * @version 1.0
- * @since 2024
+ * @since 2025
  */
 
 // Include header template
@@ -230,8 +230,8 @@ $user = current_user();
                             </div>
                             <div class="demo-content">
                                 <h5>Lecturer Account</h5>
-                                <p class="demo-email">teacher123@gmail.com</p>
-                                <p class="demo-password">teacher123</p>
+                                <p class="demo-email">lecturer1@university.edu</p>
+                                <p class="demo-password">123456</p>
                                 <a href="login.php" class="btn btn-outline btn-small">Try Now</a>
                             </div>
                         </div>
@@ -243,8 +243,8 @@ $user = current_user();
                             </div>
                             <div class="demo-content">
                                 <h5>Student Account</h5>
-                                <p class="demo-email">student123@gmail.com</p>
-                                <p class="demo-password">student123</p>
+                                <p class="demo-email">student1@university.edu</p>
+                                <p class="demo-password">123456</p>
                                 <a href="login.php" class="btn btn-outline btn-small">Try Now</a>
                             </div>
                         </div>

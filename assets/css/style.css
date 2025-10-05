@@ -14,7 +14,7 @@
  * 
  * @author Student Developer
  * @version 1.0
- * @since 2024
+ * @since 2025
  */
 
 /* ============================================================================
@@ -1074,9 +1074,11 @@ main {
 .footer-bottom {
     text-align: center;
     padding-top: 32px;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-    color: rgba(255, 255, 255, 0.7);
+    border-top: 1px solid rgb(236, 230, 230);
+    --muted: #ffffff;
 }
+
+
 
 /* Animations */
 .fade-in {

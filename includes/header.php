@@ -23,10 +23,9 @@ $user = current_user();
 <body>
     <header class="header" id="header">
         <nav class="nav container">
-            <a href="index.php" class="logo">
-                <span class="logo-text">Canberra System</span>
-                <span class="logo-subtitle">Student Attendance & Marks Management</span>
-            </a>
+        <a href="index.php" class="logo">
+    <img src="assets/images/header-logo.png" alt="Canberra Student Attendance & Marks Management" class="logo-img">
+</a>
             <?php if ($user): ?>
                 <!-- Logged in navigation -->
                 <ul class="nav-links">
